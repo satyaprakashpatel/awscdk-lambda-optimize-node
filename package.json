@@ -1,9 +1,8 @@
 {
   "name": "awscdk-lambda-optimize-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Push files which are used in the function",
-  "main": "index.mjs",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

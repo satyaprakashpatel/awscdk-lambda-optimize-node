@@ -1,6 +1,6 @@
 const { Function: BaseFunction, Code } = require('aws-cdk-lib/aws-lambda');
 const { mkdirSync, existsSync, copyFileSync, readFileSync, rmSync } = require('node:fs');
-export class Function extends BaseFunction {
+class Function extends BaseFunction {
     static libDir;
     static buildDir;
     constructor(scope, id, props) {
@@ -83,3 +83,4 @@ export class Function extends BaseFunction {
 
     }
 }
+module.exports = Function;
