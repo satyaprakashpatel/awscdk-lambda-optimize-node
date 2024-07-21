@@ -15,7 +15,7 @@
     "cdk"
   ],
   "dependencies": {
-    "aws-cdk-lib": "^2.96.2",
+    "aws-cdk-lib": "^2.96.2"
   },
   "author": "Satya Prakash",
   "license": "ISC",
