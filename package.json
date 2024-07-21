@@ -1,6 +1,6 @@
 {
   "name": "awscdk-lambda-optimize-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Push files which are used in the function",
   "main": "index.mjs",
   "scripts": {
