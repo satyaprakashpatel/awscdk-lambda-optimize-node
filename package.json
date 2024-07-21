@@ -1,0 +1,26 @@
+{
+  "name": "awscdk-lambda-optimize-node",
+  "version": "1.0.0",
+  "description": "Push files which are used in the function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyaprakashpatel/awscdk-lambda-optimize-node.git"
+  },
+  "keywords": [
+    "aws",
+    "cdk"
+  ],
+  "dependencies": {
+    "aws-cdk-lib": "^2.96.2",
+  },
+  "author": "Satya Prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyaprakashpatel/awscdk-lambda-optimize-node/issues"
+  },
+  "homepage": "https://github.com/satyaprakashpatel/awscdk-lambda-optimize-node#readme"
+}
