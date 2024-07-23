@@ -30,13 +30,32 @@ Use it same as you were using aws-cdk lib function:
 const { Code } = require('aws-cdk-lib/aws-lambda');
 const Function = require("awscdk-lambda-optimize-node");
 
-let checkAccountStatusLambda = new Function(this, 'StepCheckAccountStatus', {
+let checkAccountStatusLambda = new Function(this, 'LambdaFunction', {
       runtime: Runtime.NODEJS_18_X,
       handler: 'handler',
       code: Code.fromAsset(path.join(__dirname, 'lambda'))
 });
 
 ```
+
+Add additional directory
+
+```
+const { Code } = require('aws-cdk-lib/aws-lambda');
+const Function = require("awscdk-lambda-optimize-node");
+
+let checkAccountStatusLambda = new Function(this, 'LambdaFunction', {
+      runtime: Runtime.NODEJS_18_X,
+      handler: 'handler',
+      code: Code.fromAsset(path.join(__dirname, 'lambda')),
+      includeAdditionalDirectories: [
+        "directorypath"
+      ]
+});
+
+```
+
+same as direactory if you want to include files then you can add it in includeAdditionalFiles props.
 
 ### Contributing
 
