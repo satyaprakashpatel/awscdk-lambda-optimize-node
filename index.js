@@ -7,7 +7,7 @@ class Function extends BaseFunction {
 
         console.log(props.code.path);
         Function.libDir = props.code.path;
-        Function.buildDir = __dirname + "/build";
+        Function.buildDir = Function.libDir + "/build";
         let [fileName, functionName] = props.handler.split(".");
         let packageName = fileName.replaceAll("/", "-");
         let packagePath = Function.buildDir + "/" + packageName;
