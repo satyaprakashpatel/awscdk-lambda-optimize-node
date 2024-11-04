@@ -5,7 +5,7 @@ class Function extends BaseFunction {
     static buildDir;
     constructor(scope, id, props) {
 
-        console.log(props.code.path);
+        console.log('libdir', props.code.path);
         Function.libDir = props.code.path;
         Function.buildDir = Function.libDir + "/build";
         let [fileName, functionName] = props.handler.split(".");
