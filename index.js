@@ -66,6 +66,7 @@ class Function extends BaseFunction {
             return true;
         }
         mkdirSync(currentDir.replace(lambdaDir, packagePath), { recursive: true });
+        mkdirSync(baseDir.replace(lambdaDir, packagePath), { recursive: true });
         copyFileSync(baseDir + "/" + fileName, baseDir.replace(lambdaDir, packagePath) + "/" + fileName);
         let fileData = readFileSync(baseDir + "/" + fileName, { encoding: 'utf8', flag: 'r' });
 
